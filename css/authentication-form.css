@@ -23,10 +23,21 @@ p {
 }
 
 /* 👇👇👇  ADD YOUR FORM STYLES BENEATH  👇👇👇*/
+.content{
+  display: flex;
+  gap: 40px;
+}
 
 form {
   border: 1px solid #a9a9a9;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px
+}
+
+.form-header{
+  padding-bottom: 20px
 }
 
 .subtext {
@@ -44,8 +55,8 @@ a {
   text-decoration: none;
 }
 
-label {
-  font-weight: bold;
+label , p{
+  font-weight: 800;
 }
 
 input {
@@ -82,4 +93,20 @@ input[type="submit"]:hover {
 
 .form select {
   height: 30px;
+}
+
+.form-submit-control{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.form-input-control{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input-control #state, #city{
+  padding: 5px 300px 5px 0px;
 }
